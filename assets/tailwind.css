@@ -1,0 +1,61 @@
+/* src/css/tailwind.css */
+
+
+/*
+   IMPORTANT: @import statements must ALWAYS come first in your CSS file,
+   before any @tailwind directives or other CSS rules.
+*/
+
+@import './fonts.css';
+
+/* This imports your custom font declarations */
+
+
+/* Tailwind CSS directives */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Global Custom CSS & Overrides (Optional) --- */
+
+
+/* You can add any custom CSS or overrides that don't fit into Tailwind utilities here. */
+
+
+/* Example: Applying default font families using your custom fonts */
+
+body {
+    font-family: 'BellMT', serif;
+    /* Apply your custom font as the default body font */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'BellMT', sans-serif;
+    /* Example: Use the same for headings, or define a 'heading' font */
+}
+
+
+/* Example: Define a custom component class using @apply */
+
+@layer components {
+    .btn-primary {
+        @apply bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md hover: bg-blue-700 transition duration-300 ease-in-out;
+    }
+}
+
+
+/* Example: Add utility overrides or custom utilities */
+
+@layer utilities {
+    .clip-text-gradient {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #fed700);
+    }
+}
