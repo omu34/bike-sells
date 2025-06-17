@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'BellMT';
+    src: url('bell-mt.woff2') format('woff2'), url('bell-mt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

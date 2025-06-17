@@ -1,0 +1,7 @@
+node_modules/
+assets/theme.css
+*.log
+dist/
+.env
+.env.local
+# Ignore environment files  
